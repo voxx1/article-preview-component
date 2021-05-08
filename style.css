@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope", sans-serif;
+}
+
+.wrapper {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 30% 25px 60px 25px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+
+}
+
+.container .main {
+    border-radius: 10px 10px 0 0;
+    height: 251px;
+}
+
+.container h4 {
+    text-align: left;
+    padding: 30px 30px 15px 30px;
+    line-height: 25px;
+    color: hsl(217, 19%, 35%);
+}
+
+.container p {
+    padding: 0 30px 0px 30px;
+    color:hsl(217, 19%, 35%);
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: white;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#details .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    left:31px;
+}
+#details .name {
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+.name p {
+    padding: 0;
+    color:hsl(212, 23%, 69%);
+}
+
+#share-button1 {
+    height: 30px;
+    width: 30px;
+    padding: 6px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+#share {
+    display: none;
+    flex-direction: row;
+    padding: 20px 20px 20px 5px;
+    background-color: hsl(217, 19%, 35%);
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    margin-top: 15px;
+}
+
+#share .list .title {
+    font-style: normal;
+    opacity: 0.3;
+    letter-spacing: 7px;
+    font-size: 15px;
+}
+
+#share i {
+font-size: 20px;
+padding-left: 20px;
+color: white;
+}
+
+#share-button2 {
+    height: 30px;
+    width: 30px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 275px;
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 960px) {
+
+    .wrapper {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 220px;
+    }
+
+    .container .main {
+        border-radius: 10px 0 0 10px ;
+        height: 276px;
+    }
+
+    #details {
+        border-radius: 0 0 10px 0 ;
+    }
+
+    #share-button1 {
+        margin-left: 430px;
+        margin-top: 30px;
+}
+    #share {
+        padding:20px 20px 21px 20px;
+        border-radius: 0 0 10px 0;
+	height: 100%;
+        
+    }
+    #share-button2 {
+        margin-left: 410px;
+        margin-top: -2px;
+    }
+
+    .list i {
+        padding: 20px 30px 20px 30px;
+
+    }
+
+    #share i {
+        font-size: 20px;
+    }
+    #share .list .title {
+        font-size: 20px;
+    }
+}
